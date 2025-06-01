@@ -1,0 +1,32 @@
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  border-style: solid;
+  color: rgb(255, 0, 93);
+  border-width: 3px;
+}
+.count {
+  color: rgb(255, 0, 93);
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.resetcontainer {
+  margin-top: 20px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 250px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+}
