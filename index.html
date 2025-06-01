@@ -1,91 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number Reset</title>
-</head>
-<style>
-      button {
-      font-size: 20px;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 20px;
-      font-weight: bold;
-      border-style:solid;
-      color:rgb(255, 0, 93);
-      border-width: 3px;
-
-      }
-.count{
-    font-size:  20px;
-    padding: 10px 20px;
-    
-
-}
-.resetcontainer {
-      margin-top: 20px;
-      
-      
-    }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      padding-top: 250px;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      font-size: 24px;
-    }
-</style>
-
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
     <div class="container">
-        <button onclick="decrement()">-</button>
-        <span id="count">0</span>
-        <button onclick="increment()">+</button>
+      <button onclick="decrement()">-</button>
+      <span id="count">0</span>
+      <button onclick="increment()">+</button>
     </div>
-        <div class="resetcontainer">
-            <button onclick="reset()">Reset</button>
-        </div>
-
-  
-    
-<script>
-    let count=0;
-
-    document.getElementById("count").style.fontWeight = "bold";
-document.getElementById("count").style.color="rgb(255, 0, 93)";
-    
-    function update(){
-        document.getElementById("count").textContent=count;
-    }
-
-    function decrement(){
-if (count>0){
-        count--;
-    
-        update();
-    }
-}
-
-function increment(){
-    count++;
-    update();
-}
-
-function reset(){
-    count=0;
-    update();
-}
-
-
-</script>
-
-</body>
+    <div class="resetcontainer">
+      <button onclick="reset()">Reset</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
